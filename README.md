@@ -4,7 +4,8 @@ Hello and welcome! You have just created your very own GitHub classroom reposito
 
 There is one important rule here: **commit + push = submit**!
 
-If this does not make sense yet, don't worry and read on. :)
+If this does not make sense yet, don't worry and read on. :) Make sure to carefully read the section on [submitting your solutions](https://github.com/iwh-halle/Template?tab=readme-ov-file#submitting-your-solutions) below.
+
 
 ## Fundamentals of Git and GitHub
 
@@ -59,11 +60,13 @@ This is all we need for now, however, it is only the tip of the iceberg. More on
 
 * Working with GitHub (remotes): https://skills.github.com/
 
+
 ## Submitting your solutions
 
 Reading this you have likely received a GitHub Classroom link, which should have created this - your very own solutions repository - automatically. You should start by ``git clone`` this repository to your personal computer. You can then start working on your solutions. If you are happy with your changes, ``git commit`` and ``git push`` the changes back to the remote repository. All the changes pushed to the remote repository before the deadline will be counted towards your submission, hence: **commit + push = submit**!
 
-Here is a quick reference for the most important commands: git_cheat_sheet.pdf
+Here is a quick reference for the most important commands: [git_cheat_sheet.pdf](https://github.com/iwh-halle/Template/blob/main/git_cheat_sheet.pdf)
+
 
 ## Coding style
 
