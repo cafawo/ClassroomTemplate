@@ -2,7 +2,7 @@
 
 Hello and welcome! You have just created your very own GitHub classroom repository. 
 
-There is one important rule here: **commit + push = submit**!
+There is one important rule here: **stage + commit + push = submit**!
 
 If this does not make sense yet, don't worry and read on. :) Make sure to carefully read the section on [submitting your solutions](https://github.com/iwh-halle/Template?tab=readme-ov-file#submitting-your-solutions) below.
 
@@ -14,23 +14,22 @@ If this does not make sense yet, don't worry and read on. :) Make sure to carefu
 ### Git (local repository)
 > Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. [(see Git, 2023)](https://git-scm.com/)
 
-Some source-code editors come with build-in Git (and even GitHub) capabilities or can be extended (e.g. [Microsoft's Visual Studio Code](https://code.visualstudio.com/), which I use during this course).
+Your local repository is essentially a folder on your local file system. Changes made in that folder can be committed to the (local) git repository.  This involves two steps:
 
-Your local repository is essentially a folder on your local file system. Changes made in that folder can be committed to the (local) git repository. 
-
-First, "stage" your changes - this is sth. like a pre-commit:
+First, stage your changes - this is sth. like a pre-commit:
 
 ```Bash
-# The '*' adds all changes made in your local folder
-git add *
+git add *  # '*' adds all changes made in your local folder
 ```
 
-In the broadest sense, you could see Git as a block chain of commits (changes) made to your repository. You can thus
-* observe a complete (almost immutable) history.
-* `git checkout` the state at any commit to the repository.
+Second, commit your staged changes to the local repository:
+```Bash
+git commit -m 'Commit message'
+```
 
 More on Git:
 
+* Simple guide: https://rogerdudler.github.io/git-guide/
 * About Git itself: https://git-scm.com/about
 * Getting started (videos, tutorials): https://git-scm.com/doc
 
@@ -39,7 +38,7 @@ More on Git:
 You can `clone` the course repository to your local system:
 
 ```Bash
-git clone https://github.com/iwh-halle/ML2024.git
+git clone [repository url]
 ```
 
 Your local Git repository remembers its origins. This enables you to `pull` updates from the remote (Git does not synchronize automatically). 
@@ -61,9 +60,24 @@ This is all we need for now, however, it is only the tip of the iceberg. More on
 * Working with GitHub (remotes): https://skills.github.com/
 
 
+## Working with Codespaces
+
+If you have your own coding setup going on, feel free to skip to the next section. Codespaces provides you with a nice interactive development environment (IDE), without the need to install Python on your local machine. Better yet, Codespaces can directly link to your classroom repository and enable you to use Git as described above. To activate your Codespace:
+
+1. Go to the landing page of your classroom repository,
+2. Click on the green "<> Code" button,
+3. Create a Codespace under the "Codespaces" tab.
+
+Carefully note that codespaces do not live forever; you still need Git in order to save your work, i.e., **stage + commit + push**! Luckily, Git integrates very nicely with Codespaces.
+
+By the way, Codespaces is essentially a browser-based version of [Visual Studio Code](https://code.visualstudio.com/), a powerful and free-to-use code editor/IDE.
+
+![codespace](res/codespace.png)
+
+
 ## Submitting your solutions
 
-Reading this you have likely received a GitHub Classroom link, which should have created this - your very own solutions repository - automatically. You should start by ``git clone`` this repository to your personal computer. You can then start working on your solutions. If you are happy with your changes, ``git commit`` and ``git push`` the changes back to the remote repository. All the changes pushed to the remote repository before the deadline will be counted towards your submission, hence: **commit + push = submit**!
+Reading this you have likely received a GitHub Classroom link, which means that you have already created your very own GitHub repository. You can interact with this repository using Codespaces (see above) or by ``git clone`` this repository to your personal computer. You can then start working on your solutions. If you are happy with your changes, ``git commit`` and ``git push`` the changes back to the remote repository. All the changes pushed to the remote repository before the deadline will be counted towards your submission, hence: **commit + push = submit**!
 
 Here is a quick reference for the most important commands: [git_cheat_sheet.pdf](https://github.com/iwh-halle/Template/blob/main/git_cheat_sheet.pdf)
 
@@ -75,12 +89,12 @@ Without being too pedantic, we follow the [PEP 8 – Style Guide for Python Code
 ### Naming convention
 
 Here are some best practices to follow when naming stuff.
-* Use all lowercase. Ex: `name` instead of `Name`
-* One exception: class names should start with a capital letter and follow by lowercase letters.
-* Use snake_case convention (i.e., separate words by underscores, look like a snake). Ex: ``gross_profit`` instead of ``grossProfit`` or ``GrossProfit``.
-* Should be meaningful and easy to remember. Ex: ``interest_rate`` instead of ``r`` or ``ir``.
-* Should have a reasonable length. Ex: ``sales_apr`` instead of ``sales_data_for_april``
-* Avoid names of popular functions and modules. Ex: avoid ``print``, ``math``, or ``collections``.
+* Use all lowercase. E.g.: `name` instead of `Name`
+* One exception: class names should start with a capital letter and follow by lowercase letters, e.g. `Student`.
+* Use snake_case convention (i.e., separate words by underscores, look like a snake). E.g.: ``gross_profit`` instead of ``grossProfit`` or ``GrossProfit``.
+* Meaningful and easy to remember. E.g.: ``interest_rate`` instead of ``r`` or ``ir``.
+* Reasonable length. E.g.: ``sales_apr`` instead of ``sales_data_for_april``
+* Avoid names of popular functions and modules. E.g.: avoid ``print``, ``math``, or ``collections``.
 
 ### Comments
 
@@ -91,7 +105,7 @@ Comments should help to understand how your code works and your intentions behin
 
 ## Resources
 
-* git_cheat_sheet.pdf
+* [git_cheat_sheet.pdf](https://github.com/iwh-halle/Template/blob/main/git_cheat_sheet.pdf)
 * http://rogerdudler.github.io/git-guide/
 * https://guides.github.com/
 * https://git-scm.com/book/en/v2
