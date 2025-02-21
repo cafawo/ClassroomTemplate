@@ -70,7 +70,7 @@ If you have your own coding setup going on, feel free to skip to the next sectio
 
 Carefully note that codespaces do not live forever; you still need Git in order to save your work, i.e., **stage + commit + push**! Luckily, Git integrates very nicely with Codespaces.
 
-By the way, Codespaces is essentially a browser-based version of [Visual Studio Code](https://code.visualstudio.com/), a powerful and free-to-use code editor/IDE.
+By the way, the Codespaces user interface is essentially a browser-based version of [Visual Studio Code](https://code.visualstudio.com/), a powerful and free-to-use code editor/IDE.
 
 ![codespace](res/codespace.png)
 
