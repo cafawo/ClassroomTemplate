@@ -72,8 +72,6 @@ Carefully note that codespaces do not live forever; you still need Git in order 
 
 By the way, the Codespaces user interface is essentially a browser-based version of [Visual Studio Code](https://code.visualstudio.com/), a powerful and free-to-use code editor/IDE.
 
-![codespace](res/codespace.png)
-
 
 ## Submitting your solutions
 
